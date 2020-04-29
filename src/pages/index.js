@@ -1,21 +1,39 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import Header from '../components/header';
+import Klang from "../components/card";
+import data from "../data/data.json"
+import DropMenu from "../components/dropdown"
+import "../styles/styles.scss"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+const Page = styled.div`
+  width: 100%;
+  max-width: 1260px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+    <Page>
+      <Header />
+      {data.something.map(something => (
+        <Klang
+          text={something.text}
+          text2={something.text2}
+        />
 
-export default IndexPage
+      ))}
+      <DropMenu />
+    </Page>
+  </Layout>
+);
+
+
+
+export default IndexPage;

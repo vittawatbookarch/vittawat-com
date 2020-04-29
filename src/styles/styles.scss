@@ -1,0 +1,46 @@
+@import "./breakpoint.scss";
+
+body {
+    background-color: red;
+
+    @include breakpoint('medium') {
+    background-color: green;
+
+    }
+
+    @include breakpoint('large') {
+    background-color: blue;
+
+    }
+}
+
+body {
+    font-size: 16px;    
+
+    @include breakpoint('medium') {
+    font-size: 24px;
+
+    }
+
+    @include breakpoint('large') {
+    font-size: 32px;
+
+    }
+}
+
+div {
+    font-weight: 200;
+
+    @include breakpoint('medium') {
+        font-weight: 500;
+
+
+    }
+
+    @include breakpoint('large') {
+        font-weight: 900;
+
+
+    }
+
+}
