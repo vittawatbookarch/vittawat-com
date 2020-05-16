@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+
+   font-family: 'Lato', sans-serif;
+}
+
+
+
+body {
+
+   
+    height: 1040px;
+    background-color: #F3F4F5;
+
+        
+        animation-name: example;
+        animation-duration: 5s;
+}
+   
+      @keyframes example {
+        0%   {background-color: black}
+        100% {background-color: #F3F4F5;}
+      
+    
+   
+    
+}
+
+
+.header2 {
+
+    font-family: 'Lato', sans-serif;
+
+
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+   
+
+
+}
+.footer {
+
+    color:#868686;
+    
+    font-weight: 300;
+    
+   
+    position:fixed;
+    bottom: 0;  
+   
+  
+    
+  
+}
+
+.indextext {
+
+    
+    height: 1025px;
+ 
+    color:#5D5D5D;
+    font-weight: 400;
+    position: absolute;
+    top: 32%;
+    height: 500px;
+    
+  
+  
+    
+}
+
+.background {
+
+
+}
+.indexcontainer {
+    min-height: calc(100vh - 211px - 58px);
+
+}
+
+.grid-container{
+
+    display: grid;
+   
+    grid-column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-row: 10 10 10;
+   
+    
+}
+
+
+
+
+.one {
+   
+    grid-column: 1/4;
+   
+}
+
+.two {
+ 
+    grid-column: 1/4;
+    
+   
+}
+
+.three {
+  
+    grid-column: 1/4;
+   
+}
+
+.four {
+    
+    grid-column: 1/4;
+
+   
+}
+
+.five {
+   
+    grid-column: 1/4;
+ 
+   
+}
+
+.six {
+ 
+    grid-column: 1/4;
+ 
+    
+}
+
+.seven{
+ 
+    grid-column: 1/4;
+ 
+    
+}
+
+.eight {
+ 
+    grid-column: 1/4;
+ 
+}
+
+.nine {
+ 
+    grid-column: 1/4;
+   
+}
+
+.ten {
+ 
+    grid-column: 1/4;
+   
+}
+.undertext{
+
+   font-weight: 400;
+   padding-bottom:28px;
+   color:#5D5D5D;
+
+ 
+   
+}
+.undertext-b {
+
+    font-weight: 400;
+    padding-bottom:28px;
+    color:#5D5D5D;
+}
+  
+    
+
+.grid-container2 {
+
+    grid-column-gap: 16px;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-row: 10 10 ;
+    padding-top:40px;
+}
+
+
+.text1 {
+
+        grid-column: 2/3;
+        font-size: 20px;
+        line-height: 32px;;
+}
+
+.project1-a {
+ 
+        grid-column: 1/1;
+        }
